@@ -17,7 +17,7 @@ from django.views.generic.edit import CreateView
 # Add login_required decorator:
 @login_required
 def index(request):
-    latest_week_poll = Week.objects.get(pk=2)
+    latest_week_poll = Week.objects.get(pk=1)
     context = {
         "name": request.user,
         "week_poll": latest_week_poll
